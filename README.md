@@ -2,9 +2,6 @@
 
 **Analytical solution (transfer matrix method) vs. Finite Element validation**
 
-Authors: Wang Zichuan, Lyu Tianxiang, Fang Sizhe  
-Institution: School of Mechanical Engineering, Tianjin University
-
 ---
 
 ## Overview
