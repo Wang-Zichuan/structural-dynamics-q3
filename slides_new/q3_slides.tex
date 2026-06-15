@@ -361,11 +361,13 @@
     \centering
     \includegraphics[width=\linewidth]{q3_characteristic_roots.pdf}
     \column{0.34\linewidth}
+    \small
     \begin{itemize}
-      \item 红色点为特征根位置
-      \item $\bar{\omega}_n=\beta_n^2$ 为无量纲频率
-      \item 低阶根分布清晰
-      \item 高阶区域振荡增强
+      \item[纵轴] 采用 $\operatorname{sgn}(D)\log_{10}(1+|D|)$ 压缩宽动态范围
+      \item[红点] 特征根 $\beta_n$ 位于 $D=0$ 的过零点
+      \item[低阶] $\beta_{1\sim4}$ 分布清晰、间距规律
+      \item[高阶] $\beta>6$ 后行列式剧烈振荡，根间距收窄
+      \item[$\bar\omega_n$] 无量纲频率由 $\beta_n^2$ 恢复
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -373,25 +375,27 @@
 % ====== 14. 解析振型 ======
 \begin{frame}{解析振型函数}
   \begin{columns}[T,onlytextwidth]
-    \column{0.68\linewidth}
+    \column{0.66\linewidth}
     \centering
     \includegraphics[width=\linewidth]{q3_mode_shapes.pdf}
-    \column{0.28\linewidth}
+    \column{0.30\linewidth}
     \small
     \begin{itemize}
-      \item $B$ 点位移为零
-      \item $C$ 点集中质量处位移连续
-      \item $D$ 点弹簧处位移连续，剪力跳跃
-      \item 不同模态表现出不同局部弯曲形态
+      \item 各阶振型均满足 $Y(1)=0$（$B$ 点支承）
+      \item Mode 1：半波形态，$C$ 点振幅最大
+      \item Mode 2：$B\!-\!C$ 间出现节点，弹簧端接近驻点
+      \item Mode 3、4：节线数递增，局部弯曲加剧
+      \item $C$ 点（质量）：位移连续，斜率不变
+      \item $D$ 点（弹簧）：位移连续，$\phi'$ 有转角
     \end{itemize}
   \end{columns}
 \end{frame}
 
-% ====== 15. 解析动力响应 ======
-\begin{frame}{解析动力响应}
+% ====== 15. C点解析响应 ======
+\begin{frame}{$C$ 点解析动力响应}
   \begin{columns}[T,onlytextwidth]
     \column{0.42\linewidth}
-    \begin{block}{模态响应表达式}
+    \begin{block}{模态响应公式}
       \[
       w(x,t)=
       \sum_{n=1}^{\infty}
@@ -401,25 +405,37 @@
       \sin\omega_n t
       \]
     \end{block}
+    \vspace{0.3em}
+    初始速度 $v_0$ 作用于 $C$ 点集中质量，$C$ 点响应最能体现初始激励特征。
     \column{0.54\linewidth}
     \centering
     \includegraphics[width=\linewidth]{q3_c_point_response.pdf}
+    \vspace{0.3em}
+    \small
+    \begin{itemize}
+      \item 位移 $\bar{w}_C$（蓝）和速度 $\dot{\bar{w}}_C$（红）均随时间演化
+      \item 速度曲线相位领先位移约 $\pi/2$，符合 $\sin\to\cos$ 规律
+      \item 初始 $\tau=0$ 时 $\bar{w}_C=0$、$\dot{\bar{w}}_C>0$，满足冲击初速条件
+      \item 多模态叠加形成非严格周期响应的包络调制
+    \end{itemize}
   \end{columns}
 \end{frame}
 
 % ====== 16. 全梁时空响应 ======
 \begin{frame}{解析全梁时空响应}
   \begin{columns}[T,onlytextwidth]
-    \column{0.66\linewidth}
+    \column{0.64\linewidth}
     \centering
     \includegraphics[width=\linewidth]{q3_spacetime_response.pdf}
-    \column{0.30\linewidth}
+    \column{0.32\linewidth}
     \small
     \begin{itemize}
-      \item 横轴：$\xi=x/l$
-      \item 纵轴：$\tau=t/t_0$
-      \item 颜色：无量纲横向位移
-      \item 支承、质量、弹簧位置各有局部特征
+      \item 横轴 $\xi=x/l$，纵轴 $\tau=t/t_0$，颜色为 $\bar{w}$
+      \item 红色/蓝色区域交替：位移随时间的正负振荡
+      \item $\xi=1$（$B$ 点支承）：位移始终为零，形成节线
+      \item $\xi=2$（$C$ 点质量）：颜色过渡平滑，无突变
+      \item $\xi=3$（$D$ 点弹簧）：振幅略微收窄，局部约束效应
+      \item 颜色带沿 $\tau$ 轴倾斜：波沿梁长传播的速度信息
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -523,11 +539,13 @@
     \centering
     \includegraphics[width=\linewidth]{comparison_frequency_spectrum.pdf}
     \column{0.34\linewidth}
+    \small
     \begin{itemize}
-      \item 前 8 阶频率几乎重合
-      \item 前 11 阶误差较小
-      \item 第 12 阶误差开始增大
-      \item 高阶模态受空间离散影响
+      \item Mode 1$\sim$8 柱状图中解析与 FEM 柱高肉眼不可分辨
+      \item $\bar\omega_1\approx1.29$，$\bar\omega_8\approx30.2$，频率跨度约 23 倍
+      \item 低阶频率增长较慢（Mode 1$\to$2 增量 $\approx0.66$）
+      \item 高阶频率增速加快（Mode 7$\to$8 增量 $\approx8.76$）
+      \item 趋势表明 FEM 空间离散对高阶影响开始显现
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -539,11 +557,13 @@
     \centering
     \includegraphics[width=\linewidth]{comparison_frequency_error.pdf}
     \column{0.34\linewidth}
+    \small
     \begin{itemize}
-      \item 低阶频率误差处于极小量级
-      \item 误差随阶数总体增大
-      \item 高阶误差来自有限元空间离散和模态截断
-      \item 更密网格可改善高阶结果
+      \item Mode 1 误差 $\approx6.6\times10^{-7}\%$，几乎为机器精度
+      \item Mode 1$\sim$4 误差保持 $<2\times10^{-5}\%$
+      \item Mode 5$\sim$11 误差从 $6.5\times10^{-5}\%$ 增至 $2.2\times10^{-3}\%$
+      \item Mode 12 误差跳升至 $3.7\times10^{-2}\%$，发生质变
+      \item 对数坐标下误差呈分段线性增长，转折点约在 Mode 11
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -557,18 +577,21 @@
     \column{0.30\linewidth}
     \small
     \begin{itemize}
-      \item FEM 振型与解析振型几乎完全重合
-      \item 前四阶节点 $L_2$ 相对误差
+      \item 四子图逐一对比，FEM 虚线与解析实线完全叠合
+      \item Mode 1 半波、Mode 2 单节线、Mode 3 双节线、Mode 4 三节线
+      \item 节点位置、极值幅值均一致
     \end{itemize}
-    \vspace{0.3em}
-    \[
-    \begin{aligned}
-    \text{Mode 1: }&2.455\times10^{-9}\\
-    \text{Mode 2: }&1.727\times10^{-9}\\
-    \text{Mode 3: }&2.404\times10^{-8}\\
-    \text{Mode 4: }&5.903\times10^{-8}
-    \end{aligned}
-    \]
+    \vspace{0.2em}
+    \begin{block}{$L_2$ 相对误差}
+      \[
+      \begin{aligned}
+      1:&\,2.455\times10^{-9}\\
+      2:&\,1.727\times10^{-9}\\
+      3:&\,2.404\times10^{-8}\\
+      4:&\,5.903\times10^{-8}
+      \end{aligned}
+      \]
+    \end{block}
   \end{columns}
 \end{frame}
 
@@ -577,25 +600,29 @@
   \begin{columns}[T,onlytextwidth]
     \column{0.54\linewidth}
     \centering
-    \includegraphics[width=0.92\linewidth]{comparison_c_response.pdf}
+    \includegraphics[width=0.95\linewidth]{comparison_c_response.pdf}
     \column{0.42\linewidth}
     \small
-    \begin{enumerate}
-      \item 传递矩阵法有效处理质量与弹簧引起的状态跳跃
-      \item FEM 准确复现低阶固有频率与振型
-      \item 位移响应吻合较好，速度响应对高阶模态更敏感
-      \item 误差主要来自空间离散和模态截断
-    \end{enumerate}
-  \end{columns}
-  \vspace{0.2em}
-  \begin{block}{展望}
-    \small
+    \textbf{对比观察}
     \begin{itemize}
-      \item 增加单元数提升高阶模态精度
-      \item 研究不同 $\alpha,\kappa$ 的影响
-      \item 扩展到阻尼、强迫振动问题
+      \item 位移 $w_C$：解析与 FEM 曲线完全重合
+      \item 速度 $\dot w_C$：模态叠加特征丰富，FEM 复现良好
+      \item $\tau\to16$ 未见相位漂移
     \end{itemize}
-  \end{block}
+    \vspace{0.3em}
+    \textbf{核心结论}
+    \begin{itemize}
+      \item 传递矩阵法有效处理状态跳跃
+      \item FEM 准确复现低阶频率、振型与响应
+      \item 解析解是理论基准，FEM 是工程验证框架
+    \end{itemize}
+    \vspace{0.3em}
+    \textbf{展望}
+    \begin{itemize}
+      \item 增加单元数、研究 $\alpha,\kappa$ 参数影响
+      \item 扩展到阻尼 / 强迫振动问题
+    \end{itemize}
+  \end{columns}
 \end{frame}
 
 \end{document}
