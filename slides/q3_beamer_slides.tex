@@ -185,23 +185,30 @@
 
 % 8
 \begin{frame}{无量纲化}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.48\linewidth}
-    \[
-    \xi=\frac{x}{l}
-    \]
-    \[
-    A:0,\quad B:1,\quad C:2,\quad D:3,\quad E:4
-    \]
-    \[
-    \beta=\lambda l
-    \]
+  \vspace{0.2em}
+  \begin{columns}[c,onlytextwidth]
+    \column{0.46\linewidth}
+    \begin{block}{变量定义}
+      \[
+      \xi=\frac{x}{l},\qquad \beta=\lambda l
+      \]
+      \vspace{-0.4em}
+      \[
+      A:0,\quad B:1,\quad C:2,\quad D:3,\quad E:4
+      \]
+    \end{block}
+    \vspace{0.5em}
+    \begin{center}
+      \small
+      将梁长坐标归一化到 $\xi\in[0,4]$，可使边界点与局部构件位置直接进入代数方程。
+    \end{center}
     \column{0.48\linewidth}
     \begin{block}{无量纲空间方程}
       \[
       Y''''-\beta^4Y=0
       \]
     \end{block}
+    \vspace{0.6em}
     \begin{block}{频率恢复}
       \[
       \omega_n=
@@ -210,6 +217,7 @@
       \]
     \end{block}
   \end{columns}
+  \vspace{0.8em}
   \takeaway{求解的关键变为寻找特征根 $\beta_n$。}
 \end{frame}
 
