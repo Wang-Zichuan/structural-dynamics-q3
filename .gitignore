@@ -2,3 +2,9 @@
 *.o
 *.mod
 __pycache__/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+paper/paper_preview_*.png
