@@ -175,89 +175,80 @@
 
 % ====== 7. 控制方程 ======
 \begin{frame}{控制方程}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.48\linewidth}
-    \begin{block}{Euler--Bernoulli 梁段方程}
-      设线密度：
-      \[
-      \mu=\rho S
-      \]
-      控制方程：
-      \[
-      EJ\frac{\partial^4 w}{\partial x^4}
-      +\rho S\frac{\partial^2 w}{\partial t^2}
-      =0
-      \]
-    \end{block}
-    \column{0.48\linewidth}
-    \begin{block}{分离变量}
-      令：
-      \[
-      w(x,t)=\phi(x)q(t)
-      \]
-      空间方程：
-      \[
-      \phi^{(4)}-\lambda^4\phi=0
-      \]
-    \end{block}
-  \end{columns}
+  \begin{block}{Euler--Bernoulli 梁段方程}
+    设线密度：
+    \[
+    \mu=\rho S
+    \]
+    控制方程：
+    \[
+    EJ\frac{\partial^4 w}{\partial x^4}
+    +\rho S\frac{\partial^2 w}{\partial t^2}
+    =0
+    \]
+  \end{block}
+  \vspace{0.5em}
+  \begin{block}{分离变量}
+    令位移场分离时间与空间：
+    \[
+    w(x,t)=\phi(x)q(t)
+    \]
+    代入控制方程得空间常微分方程：
+    \[
+    \phi^{(4)}-\lambda^4\phi=0
+    \]
+  \end{block}
 \end{frame}
 
 % ====== 8. 无量纲化 ======
 \begin{frame}{无量纲化}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.40\linewidth}
-    \begin{block}{坐标归一化}
-      \[
-      \xi=\frac{x}{l},\qquad
-      \beta=\lambda l
-      \]
-      节点位置：
-      \[
-      A:0,\; B:1,\; C:2,\; D:3,\; E:4
-      \]
-    \end{block}
-    \column{0.28\linewidth}
-    \begin{block}{空间方程}
-      \[
-      Y''''-\beta^4Y=0
-      \]
-    \end{block}
-    \column{0.28\linewidth}
-    \begin{block}{频率恢复}
-      \[
-      \omega_n=
-      \frac{\beta_n^2}{l^2}
-      \sqrt{\frac{EJ}{\rho S}}
-      \]
-    \end{block}
-  \end{columns}
-  \vspace{1em}
+  \vspace{-0.3em}
+  \begin{block}{坐标归一化}
+    \[
+    \xi=\frac{x}{l},\qquad
+    \beta=\lambda l
+    \]
+    节点位置：
+    \[
+    A:0,\; B:1,\; C:2,\; D:3,\; E:4
+    \]
+  \end{block}
+  \vspace{0.3em}
+  \begin{block}{无量纲空间方程}
+    \[
+    Y''''-\beta^4Y=0
+    \]
+  \end{block}
+  \vspace{0.3em}
+  \begin{block}{频率恢复关系}
+    \[
+    \omega_n=
+    \frac{\beta_n^2}{l^2}
+    \sqrt{\frac{EJ}{\rho S}}
+    \]
+  \end{block}
+  \vspace{0.6em}
+  \centering
   求解 $\beta_n$ 是整个解析解的核心——得到 $\beta_n$ 即可恢复实频。
 \end{frame}
 
 % ====== 9. 边界条件 ======
 \begin{frame}{边界条件}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.48\linewidth}
-    \begin{block}{自由端 $A,\;E$}
-      \[
-      Y''(0)=Y'''(0)=0
-      \]
-      \[
-      Y''(4)=Y'''(4)=0
-      \]
-      弯矩与剪力为零。
-    \end{block}
-    \column{0.48\linewidth}
-    \begin{block}{$B$ 点铰支}
-      \[
-      Y(1)=0
-      \]
-      $Y,\;Y',\;Y''$ 连续；\\
-      $Y'''$ 可因支座反力跳跃。
-    \end{block}
-  \end{columns}
+  \begin{block}{自由端 $A,\;E$}
+    \[
+    Y''(0)=Y'''(0)=0,\qquad
+    Y''(4)=Y'''(4)=0
+    \]
+    弯矩与剪力为零。
+  \end{block}
+  \vspace{0.5em}
+  \begin{block}{$B$ 点铰支座}
+    \[
+    Y(1)=0
+    \]
+    $Y,\;Y',\;Y''$ 在支座处连续；
+    $Y'''$ 可因支座反力产生跳跃。
+  \end{block}
 \end{frame}
 
 % ====== 10. 跳跃条件 ======
