@@ -595,34 +595,54 @@
   \end{columns}
 \end{frame}
 
-% ====== 23. 结论与展望 ======
-\begin{frame}{动力响应对比与结论}
+% ====== 23. 动力响应对比 ======
+\begin{frame}{$C$ 点动力响应对比}
   \begin{columns}[T,onlytextwidth]
-    \column{0.54\linewidth}
+    \column{0.58\linewidth}
     \centering
     \includegraphics[width=0.95\linewidth]{comparison_c_response.pdf}
-    \column{0.42\linewidth}
+    \column{0.38\linewidth}
     \small
     \textbf{对比观察}
     \begin{itemize}
-      \item 位移 $w_C$：解析与 FEM 曲线完全重合
+      \item 位移 $w_C$：解析（蓝实线）与 FEM（黑虚线）完全重合
       \item 速度 $\dot w_C$：模态叠加特征丰富，FEM 复现良好
-      \item $\tau\to16$ 未见相位漂移
-    \end{itemize}
-    \vspace{0.3em}
-    \textbf{核心结论}
-    \begin{itemize}
-      \item 传递矩阵法有效处理状态跳跃
-      \item FEM 准确复现低阶频率、振型与响应
-      \item 解析解是理论基准，FEM 是工程验证框架
-    \end{itemize}
-    \vspace{0.3em}
-    \textbf{展望}
-    \begin{itemize}
-      \item 增加单元数、研究 $\alpha,\kappa$ 参数影响
-      \item 扩展到阻尼 / 强迫振动问题
+      \item 位移 RMS 误差 $1.27\times10^{-3}$，速度 RMS 误差 $1.01\times10^{-1}$
+      \item $\tau\to16$ 未见相位漂移，验证频率一致性
     \end{itemize}
   \end{columns}
+\end{frame}
+
+% ====== 24. 结论与展望 ======
+\begin{frame}{结论与展望}
+  \begin{columns}[T,onlytextwidth]
+    \column{0.48\linewidth}
+    \begin{block}{核心结论}
+      \begin{enumerate}
+        \item 传递矩阵法可有效处理集中质量和弹簧引起的状态跳跃
+        \item 80 单元 FEM 模型准确复现前 11 阶固有频率与振型
+        \item 动力响应对比中位移吻合极好，速度在低阶范围内一致
+        \item 误差主要来自有限元空间离散和模态截断
+      \end{enumerate}
+    \end{block}
+    \column{0.48\linewidth}
+    \begin{block}{贡献总结}
+      \begin{itemize}
+        \item 解析解：为含离散构件的连续梁提供理论基准
+        \item 数值解：FEM 配合传递矩阵法构成可扩展验证框架
+        \item 工作流：Fortran 求解 + Python 后处理，完整可复现
+      \end{itemize}
+    \end{block}
+  \end{columns}
+  \vspace{0.6em}
+  \begin{block}{展望}
+    \small
+    \begin{enumerate}
+      \item 加密网格以提升高阶模态精度
+      \item 研究不同 $\alpha$（质量比）和 $\kappa$（弹簧刚度）对频率和响应的影响规律
+      \item 扩展至含阻尼、强迫振动、多点局部附件的更一般问题
+    \end{enumerate}
+  \end{block}
 \end{frame}
 
 \end{document}
