@@ -299,6 +299,38 @@ m\phi_n^2(2l).
 \end{equation}
 有限元程序采用 Fortran 编写，结果导出为 CSV 文件；后处理和绘图采用 Python 与 SciencePlots 完成。
 
+\subsection{解析解可视化}
+
+在进行有限元验证前，首先对解析传递矩阵解进行可视化。\cref{fig:analytical_roots} 给出了特征方程 $\det\bm A(\beta)=0$ 的扫描结果及前若干阶根的位置。可以看到，特征函数在正根处发生过零，所得根值进一步代入\cref{eq:omega_beta} 即可得到对应固有频率。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.62\linewidth]{q3_characteristic_roots.pdf}
+  \caption{解析特征方程及特征根分布}
+  \label{fig:analytical_roots}
+\end{figure}
+
+\cref{fig:analytical_modes_response} 给出了由解析解得到的前四阶归一化振型以及全梁时空响应。振型在 $B$ 点满足位移约束，在 $C$、$D$ 点保持位移连续，同时通过状态跳跃反映集中质量和弹簧支承的局部作用。时空响应图反映了初速度作用后全梁横向位移随时间和空间的演化规律。
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{0.49\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{q3_mode_shapes.pdf}
+    \caption{解析振型}
+    \label{fig:analytical_modes}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.49\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{q3_spacetime_response.pdf}
+    \caption{解析时空响应}
+    \label{fig:analytical_spacetime}
+  \end{subfigure}
+  \caption{解析解振型与动力响应可视化}
+  \label{fig:analytical_modes_response}
+\end{figure}
+
 \subsection{固有频率对比}
 
 \cref{tab:freq_compare} 给出了前 $12$ 阶固有频率的解析解与有限元结果。可以看出，前 $11$ 阶频率误差均较小，第 $12$ 阶误差增大，说明在当前 $80$ 单元离散下，高阶模态已经开始受到空间离散误差影响。
