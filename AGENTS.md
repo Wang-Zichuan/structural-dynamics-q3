@@ -1,0 +1,7 @@
+- 输出md文档中的公式结构 ：行间公式$$，行内公式$
+- 每次执行完任务后，复盘任务中失败的环节，将失败经验总结入AGENT.md文件中
+- 回答我使用中文
+- 科研绘图标签使用英文
+- 每次完成任务如果项目文件夹变化，要及时 git commit
+- 复盘经验：PowerShell 中不能使用 Bash 的 `python - <<'PY'` heredoc 写法；应改用 PowerShell here-string：`@' ... '@ | python -`。
+- 复盘经验：在 PowerShell 调用 MSYS2 `gfortran` 时，如果 `f951.exe` 返回 `-1073741511` 或静默失败，先把 `C:\msys64\mingw64\bin;C:\msys64\usr\bin` 临时加入 `PATH`，否则运行时 DLL 可能找不到。

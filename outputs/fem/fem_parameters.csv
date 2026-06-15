@@ -1,0 +1,11 @@
+parameter,value
+nel,80
+nodes,81
+reduced_dofs,161
+h,  5.0000000000000003E-02
+alpha,  5.0000000000000000E-01
+kappa,  2.0000000000000000E+01
+v0_bar,  1.0000000000000000E+00
+b_node,20
+c_node,40
+d_node,60
