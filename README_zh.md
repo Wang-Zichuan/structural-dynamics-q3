@@ -15,7 +15,7 @@
 
 初始条件：在 $t=0$ 时刻给 C 处的集中质量一个横向初速度 $v_0$。
 
-![结构模型](assets/image-20260601616038017.png)
+![Structural model](assets/image-20260616001638017.png)
 
 梁总长 $L = 4l$，各跨等长：$AB = BC = CD = DE = l$。
 
