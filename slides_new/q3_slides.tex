@@ -79,13 +79,7 @@
 \begin{frame}{汇报内容}
   \begin{columns}[T,onlytextwidth]
     \column{0.55\linewidth}
-    \begin{enumerate}
-      \item 研究背景与问题描述
-      \item 解析解建模与推导
-      \item 有限元模型与 Fortran 实现
-      \item 解析解与 FEM 结果对比
-      \item 结论与展望
-    \end{enumerate}
+    \tableofcontents[hideallsubsections]
     \column{0.40\linewidth}
     \begin{block}{技术路线}
       \[
@@ -97,6 +91,7 @@
   \end{columns}
 \end{frame}
 
+\section{研究背景与问题描述}
 % ====== 3. 研究背景 ======
 \begin{frame}{研究背景}
   \begin{itemize}
@@ -173,6 +168,7 @@
   \end{alertblock}
 \end{frame}
 
+\section{解析解建模与推导}
 % ====== 7. 控制方程 ======
 \begin{frame}{控制方程}
   \begin{block}{Euler--Bernoulli 梁段方程}
@@ -431,6 +427,7 @@
   \end{columns}
 \end{frame}
 
+\section{有限元模型与 Fortran 实现}
 % ====== 17. 有限元模型 ======
 \begin{frame}{有限元模型}
   \begin{block}{二节点 Euler--Bernoulli Hermite 梁单元}
@@ -523,6 +520,7 @@
   \end{table}
 \end{frame}
 
+\section{解析解与 FEM 结果对比}
 % ====== 20. 频率对比 ======
 \begin{frame}{固有频率对比}
   \begin{columns}[T,onlytextwidth]
@@ -604,6 +602,7 @@
   \end{columns}
 \end{frame}
 
+\section{结论与展望}
 % ====== 24. 结论与展望 ======
 \begin{frame}{结论与展望}
   \begin{columns}[T,onlytextwidth]
