@@ -64,33 +64,33 @@ $$
 
 频率谱如下图所示。
 
-![FEM frequency spectrum](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_frequency_spectrum.png)
+![FEM frequency spectrum](../assets/q3_fem/fem_frequency_spectrum.png)
 
 前六阶频率与解析传递矩阵结果的相对误差如下。误差很小，说明有限元离散对低阶模态已经收敛良好。
 
-![FEM frequency error](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_frequency_error.png)
+![FEM frequency error](../assets/q3_fem/fem_frequency_error.png)
 
 ## 4. 振型与响应
 
 前四阶归一化振型如下。
 
-![FEM mode shapes](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_mode_shapes.png)
+![FEM mode shapes](../assets/q3_fem/fem_mode_shapes.png)
 
 $C$ 点位移和速度响应如下。
 
-![FEM C point response](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_c_point_response.png)
+![FEM C point response](../assets/q3_fem/fem_c_point_response.png)
 
 全梁时空响应如下。
 
-![FEM spacetime response](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_spacetime_response.png)
+![FEM spacetime response](../assets/q3_fem/fem_spacetime_response.png)
 
 ## 5. 图像文件
 
-- frequency: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_frequency_spectrum.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_frequency_spectrum.pdf`
-- error: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_frequency_error.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_frequency_error.pdf`
-- modes: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_mode_shapes.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_mode_shapes.pdf`
-- c_response: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_c_point_response.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_c_point_response.pdf`
-- spacetime: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_spacetime_response.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_fem/fem_spacetime_response.pdf`
+- frequency: `../assets/q3_fem/fem_frequency_spectrum.png`, `../assets/q3_fem/fem_frequency_spectrum.pdf`
+- error: `../assets/q3_fem/fem_frequency_error.png`, `../assets/q3_fem/fem_frequency_error.pdf`
+- modes: `../assets/q3_fem/fem_mode_shapes.png`, `../assets/q3_fem/fem_mode_shapes.pdf`
+- c_response: `../assets/q3_fem/fem_c_point_response.png`, `../assets/q3_fem/fem_c_point_response.pdf`
+- spacetime: `../assets/q3_fem/fem_spacetime_response.png`, `../assets/q3_fem/fem_spacetime_response.pdf`
 
 ## 6. 备注
 

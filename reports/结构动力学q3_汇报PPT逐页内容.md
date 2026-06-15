@@ -69,7 +69,7 @@ $$
 - $D$ 点通过竖向线性弹簧与地面连接。
 - 初始时刻 $C$ 点具有横向速度 $v_0$。
 
-![结构模型](assets/image-20260616001638017.png)
+![结构模型](../assets/image-20260616001638017.png)
 
 **讲解提示：**
 
@@ -346,7 +346,7 @@ $$
 
 **特征方程扫描结果**
 
-![解析特征根](assets/q3_visualization/q3_characteristic_roots.png)
+![解析特征根](../assets/q3_visualization/q3_characteristic_roots.png)
 
 **观察**
 
@@ -364,7 +364,7 @@ $$
 
 **前四阶解析振型**
 
-![解析振型](assets/q3_visualization/q3_mode_shapes.png)
+![解析振型](../assets/q3_visualization/q3_mode_shapes.png)
 
 **观察**
 
@@ -394,7 +394,7 @@ $$
 
 **$C$ 点响应**
 
-![C点解析响应](assets/q3_visualization/q3_c_point_response.png)
+![C点解析响应](../assets/q3_visualization/q3_c_point_response.png)
 
 **讲解提示：**
 
@@ -406,7 +406,7 @@ $$
 
 **全梁位移随时间和空间演化**
 
-![解析时空响应](assets/q3_visualization/q3_spacetime_response.png)
+![解析时空响应](../assets/q3_visualization/q3_spacetime_response.png)
 
 **观察**
 
@@ -510,7 +510,7 @@ $$
 
 **解析解 vs FEM**
 
-![频率对比](assets/q3_comparison/comparison_frequency_spectrum.png)
+![频率对比](../assets/q3_comparison/comparison_frequency_spectrum.png)
 
 **主要结论**
 
@@ -528,7 +528,7 @@ $$
 
 **前 12 阶频率相对误差**
 
-![频率误差](assets/q3_comparison/comparison_frequency_error.png)
+![频率误差](../assets/q3_comparison/comparison_frequency_error.png)
 
 **误差特点**
 
@@ -546,7 +546,7 @@ $$
 
 **前四阶振型叠合**
 
-![振型叠合](assets/q3_comparison/comparison_mode_overlay.png)
+![振型叠合](../assets/q3_comparison/comparison_mode_overlay.png)
 
 **结果**
 
@@ -564,7 +564,7 @@ $$
 
 **$C$ 点动力响应对比**
 
-![C点响应对比](assets/q3_comparison/comparison_c_response.png)
+![C点响应对比](../assets/q3_comparison/comparison_c_response.png)
 
 **主要结论**
 

@@ -35,21 +35,21 @@ FEM 结果来自 Fortran 程序 `fem_q3_solver.f90` 导出的 CSV；解析结果
 
 前 8 阶频率柱状对比如下。
 
-![Frequency comparison](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_frequency_spectrum.png)
+![Frequency comparison](../assets/q3_comparison/comparison_frequency_spectrum.png)
 
 前 12 阶频率相对误差如下。
 
-![Frequency error](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_frequency_error.png)
+![Frequency error](../assets/q3_comparison/comparison_frequency_error.png)
 
 ## 3. 振型对比
 
 下图叠加前四阶归一化振型。由于振型符号可任意取反，绘图时按与 FEM 振型内积为正进行符号对齐。
 
-![Mode overlay](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_mode_overlay.png)
+![Mode overlay](../assets/q3_comparison/comparison_mode_overlay.png)
 
 前四阶振型差值如下。
 
-![Mode difference](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_mode_difference.png)
+![Mode difference](../assets/q3_comparison/comparison_mode_difference.png)
 
 前四阶振型节点 $L_2$ 相对误差为：
 
@@ -62,15 +62,15 @@ FEM 结果来自 Fortran 程序 `fem_q3_solver.f90` 导出的 CSV；解析结果
 
 $C$ 点位移与速度响应对比如下。
 
-![C response comparison](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_c_response.png)
+![C response comparison](../assets/q3_comparison/comparison_c_response.png)
 
 $C$ 点响应差值如下。
 
-![C response error](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_c_response_error.png)
+![C response error](../assets/q3_comparison/comparison_c_response_error.png)
 
 全梁时空响应差值云图如下。
 
-![Spacetime difference](D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_spacetime_difference.png)
+![Spacetime difference](../assets/q3_comparison/comparison_spacetime_difference.png)
 
 响应误差指标：
 
@@ -81,13 +81,13 @@ $C$ 点响应差值如下。
 
 ## 5. 图像文件
 
-- frequency: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_frequency_spectrum.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_frequency_spectrum.pdf`
-- frequency_error: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_frequency_error.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_frequency_error.pdf`
-- mode_overlay: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_mode_overlay.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_mode_overlay.pdf`
-- mode_difference: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_mode_difference.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_mode_difference.pdf`
-- c_response: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_c_response.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_c_response.pdf`
-- c_response_error: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_c_response_error.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_c_response_error.pdf`
-- field_difference: `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_spacetime_difference.png`, `D:/DeskTopProjects/jiegoudonglixueq3/assets/q3_comparison/comparison_spacetime_difference.pdf`
+- frequency: `../assets/q3_comparison/comparison_frequency_spectrum.png`, `../assets/q3_comparison/comparison_frequency_spectrum.pdf`
+- frequency_error: `../assets/q3_comparison/comparison_frequency_error.png`, `../assets/q3_comparison/comparison_frequency_error.pdf`
+- mode_overlay: `../assets/q3_comparison/comparison_mode_overlay.png`, `../assets/q3_comparison/comparison_mode_overlay.pdf`
+- mode_difference: `../assets/q3_comparison/comparison_mode_difference.png`, `../assets/q3_comparison/comparison_mode_difference.pdf`
+- c_response: `../assets/q3_comparison/comparison_c_response.png`, `../assets/q3_comparison/comparison_c_response.pdf`
+- c_response_error: `../assets/q3_comparison/comparison_c_response_error.png`, `../assets/q3_comparison/comparison_c_response_error.pdf`
+- field_difference: `../assets/q3_comparison/comparison_spacetime_difference.png`, `../assets/q3_comparison/comparison_spacetime_difference.pdf`
 
 ## 6. 结论
 
