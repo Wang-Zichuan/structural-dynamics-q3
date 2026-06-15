@@ -5,3 +5,4 @@
 - 每次完成任务如果项目文件夹变化，要及时 git commit
 - 复盘经验：PowerShell 中不能使用 Bash 的 `python - <<'PY'` heredoc 写法；应改用 PowerShell here-string：`@' ... '@ | python -`。
 - 复盘经验：在 PowerShell 调用 MSYS2 `gfortran` 时，如果 `f951.exe` 返回 `-1073741511` 或静默失败，先把 `C:\msys64\mingw64\bin;C:\msys64\usr\bin` 临时加入 `PATH`，否则运行时 DLL 可能找不到。
+- 复盘经验：Beamer 使用自定义主题配色后，`\titlepage` 标题块可能在渲染时出现文字不可见；交付前应抽页预览，必要时改用自定义 `beamercolorbox` 封面标题块。
